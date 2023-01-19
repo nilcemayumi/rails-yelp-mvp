@@ -1,0 +1,6 @@
+<%= render 'restaurant', restaurant: @restaurant %>
+<p>
+  <%= link_to "Edit this restaurant", edit_restaurant_path(@restaurant) %>
+  <%= link_to "Delete this restaurant", restaurant_path(@restaurant),  data: {turbo_method: :delete, turbo_confirm: "Are you sure?" }  %>
+</p>
+<p><%= link_to "Back", restaurants_path %></p>
